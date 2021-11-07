@@ -27,6 +27,10 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 R0
 R0
@@ -41,21 +45,20 @@ R0
 cModel Technology
 Z1 d/home/rjlawson/Downloads/Lab1
 T_opt
-!s110 1636171861
-V^Q36HP7n<z0m[G3z4]=Kn2
-04 14 10 work testbench_ones behavioral 1
-=1-0050569b275b-61860055-7d79c-1ac1
+!s110 1636291159
+VCY_jXLdKeL4HP9Jm7137d2
+04 5 9 work tb_as structure 1
+=1-0050569b24fd-6187d256-dd471-4779
 Z2 !s124 OEM100
-Z3 o-quiet -auto_acc_if_foreign -work work
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
 Z4 tCvgOpt 0
 n@_opt
 Z5 OL;O;2021.2;73
-R1
 T_opt1
-!s110 1636177907
-Vm>6T<V;nGe2l112P@SfVm0
+!s110 1636288824
+VDj7^LJGjlFjKo2dMgbT@D1
 04 12 10 work tb_fulladder structural 1
-=1-0050569b275b-618617f3-45a98-4923
+=1-0050569b24fd-6187c937-e93af-3a48
 R2
 R3
 R4
@@ -63,10 +66,10 @@ n@_opt1
 R5
 R1
 T_opt2
-!s110 1636180246
-V49>S9P^J5BlF2[M<H3cXC1
-04 5 9 work tb_as structure 1
-=1-0050569b275b-61862116-84964-5687
+!s110 1636290306
+V0aU]1U]LTSjLCXGEg9l?S2
+04 14 10 work testbench_ones behavioral 1
+=1-0050569b24fd-6187cf02-75157-422f
 R2
 R3
 R4
@@ -1007,12 +1010,12 @@ R19
 Adataflow
 R7
 R8
-Z140 DEx4 work 5 xorg2 0 22 ]nRm43OKZ32f958@JoPK80
+DEx4 work 5 xorg2 0 22 ]nRm43OKZ32f958@JoPK80
 !i122 489
 l32
 R34
-Z141 Vgh7bYI5aJE]odJ7>7;=<U3
-Z142 !s100 Z6[FAPS4fBLB`F?OO<AY72
+Vgh7bYI5aJE]odJ7>7;=<U3
+!s100 Z6[FAPS4fBLB`F?OO<AY72
 R13
 32
 R105
