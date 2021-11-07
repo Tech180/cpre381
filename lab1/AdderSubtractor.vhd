@@ -17,7 +17,7 @@ entity AdderSubtracter is
        i_D2  : in std_logic;
        i_Sel : in std_logic;                       --select
        o_S   : out std_logic_vector(N-1 downto 0); --sum
-       o_D  : out std_logic);   
+       o_D   : out std_logic);   
 end AdderSubtracter;
   
 architecture structural of AdderSubtracter is

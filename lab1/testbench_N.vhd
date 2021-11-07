@@ -57,19 +57,20 @@ begin
       i_toD0 <= x"FF";
       i_toD1 <= x"00";
       i_toS <=  '1';
-      wait for 100 ps;
+      wait for 100 ns;
       
       i_toS <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toD0 <= x"00";
       i_toD1 <= x"FF";      
       i_toS <=  '1';
-      wait for 100 ps;      
+      wait for 100 ns;      
 
       i_toS <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
       
+	wait;
   end process;
   
 end structural;

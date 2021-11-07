@@ -25,7 +25,7 @@ architecture structure of tb_AS is
          i_D1  : in std_logic_vector(N-1 downto 0);
          i_D2  : in std_logic;
          i_Sel : in std_logic;
-         o_S   : out std_logic_vector(N-1 downto 0)
+         o_S   : out std_logic_vector(N-1 downto 0);
 	 o_D   : out std_logic);
   end component;
   
@@ -50,34 +50,34 @@ begin
       i_toD0 <= x"00";
       i_toD1 <= x"01";
       i_toS  <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
       
       i_toS  <=  '1';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toD0 <= x"01";
       i_toD1 <= x"01";      
       i_toS  <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toS  <=  '1';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toD0 <= x"FF";
       i_toD1 <= x"01";      
       i_toS  <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
  
       i_toS  <=  '1';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toD0 <= x"AA";
       i_toD1 <= x"A0";      
       i_toS  <=  '0';
-      wait for 100 ps;
+      wait for 100 ns;
 
       i_toS  <=  '1';
-      wait for 100 ps;
+      wait for 100 ns;
       
   end process;
   
