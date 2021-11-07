@@ -12,9 +12,6 @@
 -- - Its a synchronous counter due to its parallel counter and  the reset signal stays low for it to take effect and otherwise sets it to high rising edge
 --
 -- NOTES:
--- 8/19/16 by JAZ::Design created.
--- 11/25/19 by H3:Changed name to avoid name conflict with Quartus
---          primitives.
 -------------------------------------------------------------------------
 
 library IEEE;
@@ -22,17 +19,18 @@ use IEEE.std_logic_1164.all;
 
 entity dffg is
 
+  generic(N : integer := 32);
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
-       i_D          : in std_logic;     -- Data value input
-       o_Q          : out std_logic);   -- Data value output
+       i_D          : in std_logic_vector(N-1 downto 0);     -- Data value input
+       o_Q          : out std_logic_vector(N-1 downto 0));   -- Data value output
 
 end dffg;
 
 architecture mixed of dffg is
-  signal s_D    : std_logic;    -- Multiplexed input to the FF
-  signal s_Q    : std_logic;    -- Output of the FF
+  signal s_D    : std_logic_vector(N-1 downto 0);    -- Multiplexed input to the FF
+  signal s_Q    : std_logic_vector(N-1 downto 0);    -- Output of the FF
 
 begin
 
